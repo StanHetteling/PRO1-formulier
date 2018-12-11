@@ -1,3 +1,13 @@
+body {
+  background: red;
+}
+
+.welbevinden label {
+  display: inline-block;
+  background-color: darkred;
+  padding: 1em;
+  cursor: pointer;
+}
 
 
 #validatie img {

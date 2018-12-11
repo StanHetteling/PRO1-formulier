@@ -6,13 +6,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div id="tekst">
     <h1>Een plan voor jou ontwikkeling</h1>
     <p>om de eerste stap te zetten naar een persoonllijk opleidingplan zul je eerst een paar vragen voor je zel moeten beantwoorden. Dit formulier helpt jou daar bij.</p>
 
     <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
-      Naam <input type="text" name="naam">
+      <input type="text" name="naam" placeholder="Bv. Pippo de Clown">
+      <input type="email" name"mailadres" required placeholder="Email">
+      <input type="date" name="datum">
+      <input type="tel" name="mobiel" placeholder="Bv. 0612345678">
       <br>
-      <fieldset>
+      <fieldset class="welbevinden">
       <legend>welbevinden</legend>
       <p>Hoe positief ben je op dit moment over je opleiding?</p>
 
@@ -67,11 +71,11 @@
 
       <p>Wat zijn jou sterke kanten?</p>
 
-      <label><input type="radio" name="sterke kant" value="Coderen in HTML/CSS">Coderen in HTML/CSS</label>
-      <label><input type="radio" name="sterke kant" value="Programmeren in Java">Programmeren in Java</label>
-      <label><input type="radio" name="sterke kant" value="Scripting: programmeren in JavaScript">Scripting: programmeren in JavaScript</label>
-      <Label><input type="radio" name="sterke kant" value="Planning">Planning</label>
-      <label><input type="radio" name="sterke kant" value="Samenwerken">Samenwerken</label>
+      <label><input type="checkbox" name="sterke kant" value="Coderen in HTML/CSS">Coderen in HTML/CSS</label>
+      <label><input type="checkbox" name="sterke kant" value="Programmeren in Java">Programmeren in Java</label>
+      <label><input type="checkbox" name="sterke kant" value="Scripting: programmeren in JavaScript">Scripting: programmeren in JavaScript</label>
+      <Label><input type="checkbox" name="sterke kant" value="Planning">Planning</label>
+      <label><input type="checkbox" name="sterke kant" value="Samenwerken">Samenwerken</label>
 
     </fieldset>
     <fieldset>
@@ -79,11 +83,11 @@
 
       <p>Aan welke skills moet je nog extra aandacht besteden?</p>
 
-      <label><input type="radio" name="aandacht besteden" value="Coderen in HTML/CSS">Coderen in HTML/CSS</label>
-      <label><input type="radio" name="aandacht besteden" value="Programmeren in Java">Programmeren in Java</label>
-      <label><input type="radio" name="aandacht besteden" value="Scripting: programmeren in JavaScript">Scripting: programmeren in JavaScript</label>
-      <Label><input type="radio" name="aandacht besteden" value="Planning">Planning</label>
-      <label><input type="radio" name="aandacht besteden" value="Samenwerken">Samenwerken</label>
+      <label><input type="checkbox" name="aandacht besteden" value="Coderen in HTML/CSS">Coderen in HTML/CSS</label>
+      <label><input type="checkbox" name="aandacht besteden" value="Programmeren in Java">Programmeren in Java</label>
+      <label><input type="checkbox" name="aandacht besteden" value="Scripting: programmeren in JavaScript">Scripting: programmeren in JavaScript</label>
+      <Label><input type="checkbox" name="aandacht besteden" value="Planning">Planning</label>
+      <label><input type="checkbox" name="aandacht besteden" value="Samenwerken">Samenwerken</label>
 
     </fieldset>
 
@@ -93,7 +97,7 @@
       <input type="submit" value="versturen">
 
     </form>
-
+  </div>
     <div id="validatie">
         <a href="http://validator.w3.org/check?uri=referer" target="_blank">
         <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
